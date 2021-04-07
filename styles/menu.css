@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.section-title, .box__title {
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.section-box__title, .nav__brand h2 {
+  font-size: 33px;
+  font-weight: 300;
+}
+
+.menu__link {
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.section-box__description {
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.nav__item {
+  list-style: none;
+}
+
+.box {
+  background-image: url(/assets/coffee-circle.jpg);
+  background-size: cover;
+  background-position: center;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 575px;
+  max-height: 600px;
+}
+.box__block {
+  background-color: #393939;
+  min-width: 280px;
+  max-width: 300px;
+  min-height: 180px;
+  max-height: 200px;
+}
+.box__title {
+  color: #fff;
+  text-align: center;
+}
+
+.menu {
+  background-color: #393939;
+}
+.menu__item {
+  list-style: none;
+  text-align: center;
+}
+.menu__link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hot-drinks {
+  background-color: #fff0ed;
+  text-align: center;
+}
+
+.cold-drinks {
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.pastries {
+  background-color: #fff0ed;
+  text-align: center;
+}
+
+.section-box__description {
+  width: 50%;
+}
+.section-box__price {
+  color: #5bacc3;
+}/*# sourceMappingURL=menu.css.map */

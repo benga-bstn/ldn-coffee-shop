@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.products h2, .description__title, .nav__brand h2 {
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.footer .socials__title, .footer .hours__title, .footer .address__title, .product__title {
+  font-size: 33px;
+  font-weight: 300;
+}
+
+.nav__link {
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.footer .hours__description, .footer .address__description, .product__price {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer .socials__icons, .nav__brand img {
+  min-width: 50px;
+  max-width: 120px;
+}
+
+.discounts__description {
+  font-size: 45px;
+}
+
+.products .view-all, .description__btn {
+  background-color: #5bacc3;
+  color: #fff;
+  border-color: #5bacc3;
+}
+
+.nav {
+  background-color: #fff0ed;
+}
+.nav__item {
+  list-style: none;
+}
+.description {
+  background-color: #fff0ed;
+}
+.product__price {
+  color: #5bacc3;
+}
+
+.discounts {
+  background-color: #393939;
+}
+.discounts__description {
+  color: #fff;
+  font-weight: 400;
+}
+.discounts__description span {
+  font-weight: 700;
+}
+
+.footer {
+  background-color: #fff0ed;
+}/*# sourceMappingURL=landing.css.map */

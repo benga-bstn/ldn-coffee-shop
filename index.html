@@ -7,67 +7,68 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/styles/landing.css">
     <title>Coffee Shop - Home</title>
   </head>
   <body>
     <header>
       <nav class="nav">
         <div class="nav__brand">
-          <img src="" alt="nitro coffee" />
+          <img src="/assets/coffee-beans-logo-and-footer.svg" alt="nitro coffee" />
           <h2>nitro</h2>
         </div>
-        <ul class="nav__links">
-          <li class="nav__link">ABOUT</li>
-          <li class="nav__link">MENU</li>
-          <li class="nav__link">SHOP NOW</li>
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#" class="nav__link">ABOUT</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">MENU</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">SHOP NOW</a></li>
         </ul>
       </nav>
       <section class="description">
-        <h1 class="description__header">Nitro Coffee</h1>
+        <h1 class="description__title">Nitro Coffee</h1>
         <p class="description__paragraph">Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain coffea species.</p>
         <button class="description__btn">SHOP NOW</button>
-        <img src="" alt="coffee bag" class="description__img">
+        <img src="/assets/coffeebeans-hero.png" alt="coffee bag" class="description__img">
       </section>
     </header>
     <main>
       <section class="products">
           <h2 class="products__title">Our Products</h2>
           <div class="product">
-              <img src="" alt="coffee beans" class="product__image">
+              <img src="/assets/coffeebeans.png" alt="coffee beans" class="product__image">
               <h3 class="product__title">Coffee Beans</h3>
               <p class="product__price">$18.99</p>
           </div>
           <div class="product">
-            <img src="" alt="coffee beans" class="product__image">
+            <img src="/assets/coldbrew.png" alt="cold brew" class="product__image">
             <h3 class="product__title">Cold Brew</h3>
             <p class="product__price">$4.99</p>
           </div>
           <div class="product">
-            <img src="" alt="coffee beans" class="product__image">
+            <img src="/assets/inhousebrew.png" alt="in house brew" class="product__image">
             <h3 class="product__title">In-house Brew</h3>
             <p class="product__price">$2.99</p>
           </div>
           <button class="view-all">VIEW ALL</button>
       </section>
-      <section class="discounts">
-          <p class="discounts__description">Get 20% off your first order with code: FirstNitro</p>
-      </section>
+      <div class="discounts">
+          <p class="discounts__description">Get 20% off your first order with code: <span>FirstNitro</span></p>
+      </div>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="address">
             <h3 class="address__title">Address</h3>
             <p class="address__description">503 Broadway Penthouse New York</p>
         </div>
         <div class="hours">
             <h3 class="hours__title">Hours</h3>
-            <p class="hours__descripton">Monday - Friday: 9am - 7pm</p>
-            <p class="hours__descripton">Saturday - Sunday: 10am - 5pm</p>
+            <p class="hours__descripton"><strong>Monday - Friday:</strong> 9am - 7pm</p>
+            <p class="hours__descripton"><strong>Saturday - Sunday:</strong> 10am - 5pm</p>
         </div>
         <div class="socials">
             <h3 class="socials__title">Socials</h3>
-            <img src="" alt="Facebook" class="socials__icons">
-            <img src="" alt="Yelp" class="socials__icons">
-            <img src="" alt="Instagram" class="socials__icons">
+            <img src="/assets/Facebook-Icon.svg" alt="Facebook" class="socials__icons">
+            <img src="/assets/Yelp-Icon.svg" alt="Yelp" class="socials__icons">
+            <img src="/assets/Instagram-Icon.svg" alt="Instagram" class="socials__icons">
         </div>
     </footer>
   </body>

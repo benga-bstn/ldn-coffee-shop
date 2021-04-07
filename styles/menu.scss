@@ -1,0 +1,128 @@
+$graphite: #393939;
+$white: #fff;
+$light-gray: #f7f7f7;
+$nitro-blue: #5bacc3;
+$nitro-pink: #fff0ed;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+// MIXINS
+
+%heading-one-two {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+%heading-three-nav {
+    font-size: 33px;
+    font-weight: 300;
+}
+
+%nav-link {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+%regular-text {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+%italic-text {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+%icons {
+    min-width: 50px;
+    max-width: 120px;
+}
+
+// STYLES
+.nav {
+    &__brand {
+        h2 {
+            @extend %heading-three-nav;
+        }
+    }
+    &__item {
+        list-style: none;
+    }
+}
+
+
+
+.box {
+    background-image: url(/assets/coffee-circle.jpg);
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 575px;
+    max-height: 600px;
+    &__block {
+        background-color: $graphite;
+        min-width: 280px;
+        max-width: 300px;
+        min-height: 180px;
+        max-height: 200px;
+    }
+    &__title {
+        @extend %heading-one-two;
+        color: $white;
+        text-align: center;
+    }
+}
+
+.menu {
+    background-color: $graphite;
+    &__item {
+        list-style: none;
+        text-align: center;
+    }
+    &__link {
+        @extend %nav-link;
+        color: $white;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+// SECTIONS
+
+.hot-drinks {
+    background-color: $nitro-pink;
+    text-align: center;
+}
+
+.cold-drinks {
+    background-color: $light-gray;
+    text-align: center;
+}
+
+.pastries {
+    background-color: $nitro-pink;
+    text-align: center;
+}
+
+.section-title {
+    @extend %heading-one-two;
+}
+
+.section-box {
+    &__title {
+        @extend %heading-three-nav;
+    }
+    &__description {
+        @extend %italic-text;
+        width: 50%;
+    }
+    &__price {
+        color: $nitro-blue;
+    }
+}

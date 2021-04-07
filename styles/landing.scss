@@ -1,0 +1,142 @@
+$graphite: #393939;
+$white: #fff;
+$light-gray: #f7f7f7;
+$nitro-blue: #5bacc3;
+$nitro-pink: #fff0ed;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+// MIXINS
+
+%heading-one-two {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+%heading-three-nav {
+    font-size: 33px;
+    font-weight: 300;
+}
+
+%nav-link {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+%regular-text {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+%italic-text {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+%icons {
+    min-width: 50px;
+    max-width: 120px;
+}
+
+%discount-text {
+    font-size: 45px;
+}
+
+%btns {
+    background-color: $nitro-blue;
+    color: $white;
+    border-color: $nitro-blue;
+}
+
+// STYLES
+.nav {
+    background-color: $nitro-pink;
+    &__brand {
+        h2 {
+            @extend %heading-one-two;
+        }
+        img {
+            @extend %icons;
+        }
+    }
+    &__item {
+        list-style: none;
+    }
+    &__link {
+        @extend %nav-link;
+    }
+}
+
+.description {
+    background-color: $nitro-pink;
+    &__title {
+        @extend %heading-one-two;
+    }
+    &__btn {
+        @extend %btns;
+    }
+}
+
+.products {
+    h2 {
+        @extend %heading-one-two;
+    }
+    .view-all {
+        @extend %btns;
+    }
+}
+
+.product {
+    &__title {
+        @extend %heading-three-nav;
+    }
+    &__price {
+        @extend %regular-text;
+        color: $nitro-blue;
+    }
+}
+
+.discounts {
+    background-color: $graphite;
+    &__description {
+        @extend %discount-text;
+        color: $white;
+        font-weight: 400;
+        span {
+            font-weight: 700;
+        }
+    }
+}
+
+.footer {
+    background-color: $nitro-pink;
+    .address {
+        &__title {
+            @extend %heading-three-nav;
+        }
+        &__description {
+            @extend %regular-text;
+        }
+    }
+    .hours {
+        &__title {
+            @extend %heading-three-nav;
+        }
+        &__description {
+            @extend %regular-text;
+        }
+    }
+    .socials {
+        &__title {
+            @extend %heading-three-nav;
+        }
+        &__icons {
+            @extend %icons;
+        }
+    }
+}
